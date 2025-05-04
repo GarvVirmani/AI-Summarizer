@@ -37,7 +37,7 @@ function App() {
     if (!inputText.trim()) return;
     setLoading(true);
 
-    const generatedSummary = await summarizeWithGemini(inputText);
+    const generatedSummary = await summarizeWithGemini(inputText+"summarize all points in 150-200 words");
     setSummary(generatedSummary);
     setLoading(false);
   };
