@@ -1,12 +1,82 @@
-# React + Vite
+# ✨ AI Summarizer ✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 A sleek and simple React-based web app that summarizes long texts using the **Gemini 2.0 Flash API** by Google. Just paste your text, click a button, and let AI do the magic in 150–200 words!  
 
-Currently, two official plugins are available:
+🔗 **Live Demo**: [Click Here](https://garvvirmani.github.io/AI-Summarizer/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Features
+
+- 🧠 AI-powered summarization using Gemini 2.0 Flash
+- 📝 Clean and responsive text area
+- ⏱️ Loading indicator while generating summary
+- 🎯 Generates concise summaries (150–200 words)
+
+---
+
+## 🧑‍💻 Tech Stack
+
+- ⚛️ React (Frontend)
+- 🌐 Fetch API
+- 🔐 Google Gemini API (Generative Language)
+
+---
+
+## 📦 Setup Instructions
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/your-username/AI-Summarizer.git
+   cd AI-Summarizer
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Add your API Key**
+   - Create a file: `public/config.js`
+   - Add this:
+     ```js
+     export const GEMINI_API_KEY = "YOUR_GEMINI_API_KEY_HERE";
+     ```
+
+4. **Run locally**
+   ```bash
+   npm start
+   ```
+
+5. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+---
+
+## 🚢 Deployment
+
+This app is deployed on GitHub Pages using:
+
+```bash
+npm run build
+npm run deploy
+```
+
+Make sure your `package.json` includes:
+```json
+"homepage": "https://your-username.github.io/AI-Summarizer"
+```
+
+---
+
+## 💡 Usage
+
+1. Paste or type your content in the text area.
+2. Click **Summarize**.
+3. Get a neatly generated summary in seconds!
+---
+
+Made with ❤️ by [Garv Virmani](https://github.com/garvvirmani)
